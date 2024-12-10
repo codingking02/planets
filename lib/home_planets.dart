@@ -40,6 +40,7 @@ class _HomePlanetsState extends State<HomePlanets> {
         currentIndex++;
       } else {
         currentIndex = 0;
+        pageController.jumpToPage(0);
       }
       changePage(currentIndex);
       setState(() {});
@@ -50,6 +51,7 @@ class _HomePlanetsState extends State<HomePlanets> {
         currentIndex--;
       } else {
         currentIndex = planets.length - 1;
+        pageController.jumpToPage(planets.length - 1);
       }
       changePage(currentIndex);
       setState(() {});

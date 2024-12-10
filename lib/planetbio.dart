@@ -43,9 +43,7 @@ class _PlanetBioState extends State<PlanetBio> {
       return const Scaffold(
         backgroundColor: Color(0xFF0E0E0E),
         body: Center(
-          child: CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
-          ),
+          child: CircularProgressIndicator(),
         ),
       );
     }
